@@ -24,31 +24,31 @@ if (C.length > z) {
   console.log("good job!");
 }
 
-var L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
-var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
+// var L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
+// var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
-function findTheBanana(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === "Banana") {
-      alert("found the Banana in " + i);
-    }
-  }
-}
+// function findTheBanana(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === "Banana") {
+//       alert("found the Banana in " + i);
+//     }
+//   }
+// }
 
-findTheBanana(L1);
-findTheBanana(L2);
+// findTheBanana(L1);
+// findTheBanana(L2);
 
-L1.forEach((fruit) => {
-  if (fruit === "Banana") {
-    alert("We found a banana in the first array");
-  }
-});
+// L1.forEach((fruit) => {
+//   if (fruit === "Banana") {
+//     alert("We found a banana in the first array");
+//   }
+// });
 
-L2.forEach((fruit) => {
-  if (fruit === "Banana") {
-    alert("We found a banana in the second array");
-  }
-});
+// L2.forEach((fruit) => {
+//   if (fruit === "Banana") {
+//     alert("We found a banana in the second array");
+//   }
+// });
 
 function greetingFunc() {
   let d = new Date();
@@ -69,4 +69,40 @@ function greetingFunc() {
 
 if (window.location.href.includes("index.html")) {
   greetingFunc();
+}
+
+function addYear() {
+  var year = new Date().getFullYear();
+  document.getElementById("copyYear").innerHTML =
+    document.getElementById("copyYear").innerHTML + " " + year;
+}
+
+function showList() {
+  document.getElementById("activityList").style.display = "block";
+  document.getElementById("getMoreBtn").style.display = "none";
+}
+
+$("#readMoreBtn").click(function () {
+  $("#readMoreBtn").hide();
+  $("#longIntro").show();
+  $("#readLessBtn").show();
+});
+
+$("#readLessBtn").click(function () {
+  $("#readLessBtn").hide();
+  $("#longIntro").hide();
+  $("#readMoreBtn").show();
+});
+
+function checkValidation() {
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
+  if (
+    !name.checkValidity() ||
+    !email.checkValidity() ||
+    !message.checkValidity()
+  ) {
+    document.getElementById("validationMsg").style.display = "block";
+  }
 }

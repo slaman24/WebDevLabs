@@ -29,44 +29,60 @@
         <a href="./contact.html" class="nav-item"> Contact</a>
       </nav>
     </header>
-    <div class="main">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Your name (required)</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Your email (required)</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Your message (required)</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="7"
-          cols="20"
-          required
-        ></textarea>
-        <input type="submit" value="SEND" onclick="checkValidation()" />
-      </form>
-      <p id="validationMsg">
-        Please fill out this form correctly so I can get back to you
-      </p>
-      <table>
-        <tr>
-          <th>Contact Method Description</th>
-          <th>Contact Information</th>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td>slaman@andrew.cmu.edu</td>
-        </tr>
-        <tr>
-          <td>Phone</td>
-          <td>412-652-4691</td>
-        </tr>
-        <tr>
-          <td>LinkedIn</td>
-          <td>XXXX</td>
-        </tr>
-      </table>
+    <div class="mainLayout">
+      <div class="item" id="map">
+        <h2>Find Me</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3210.4120099033616!2d-79.9428499!3d40.4432027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf4!2sCarnegie%20Mellon%20University!5e1!3m2!1sen!2sus!4v1742716611807!5m2!1sen!2sus"
+          width="400"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="item" id="contactForm">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Your name (required)</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Your email (required)</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Your message (required)</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="7"
+            cols="20"
+            required
+          ></textarea>
+          <input type="submit" value="SEND" onclick="checkValidation()" />
+        </form>
+        <p id="validationMsg">
+          Please fill out this form correctly so I can get back to you
+        </p>
+      </div>
+      <div class="item">
+        <table>
+          <tr>
+            <th>Contact Method Description</th>
+            <th>Contact Information</th>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>slaman@andrew.cmu.edu</td>
+          </tr>
+          <tr>
+            <td>Phone</td>
+            <td>412-652-4691</td>
+          </tr>
+          <tr>
+            <td>LinkedIn</td>
+            <td>XXXX</td>
+          </tr>
+        </table>
+      </div>
     </div>
     <footer>
       <p id="copyYear">

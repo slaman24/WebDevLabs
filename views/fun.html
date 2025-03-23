@@ -29,16 +29,42 @@
         <a href="./contact.html" class="nav-item"> Contact</a>
       </nav>
     </header>
-    <div class="main">
-      <h2>Things I love to do for fun</h2>
-      <button id="getMoreBtn" onclick="showList()">Click to see...</button>
-      <ul id="activityList">
-        <li>Baking/cooking</li>
-        <li>Swimming</li>
-        <li>Playing board games</li>
-        <li>Listening to music</li>
-        <li>Crafting</li>
-      </ul>
+    <div class="mainLayout">
+      <div class="item" id="itemList">
+        <h2>Things I love to do for fun</h2>
+        <!-- <button id="getMoreBtn" onclick="showList()">Click to see...</button> -->
+        <ul id="activityList">
+          <li>Baking/cooking</li>
+          <li>Swimming</li>
+          <li>Playing board games</li>
+          <li>Listening to music</li>
+          <li>Crafting</li>
+        </ul>
+      </div>
+      <div class="item">
+        <img src="../static/baking.jpg" class="funIMG" alt="fun image" />
+      </div>
+      <div class="item">
+        <iframe
+          width="400"
+          height="230"
+          src="https://www.youtube.com/embed/2E5OtwbZO6A?si=zMwnIUshXDdhg89M"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="item">
+        <div class="container">
+          <h2>Need Some Advice?</h2>
+          <p id="adviceText">
+            Click the button to get a random piece of advice!
+          </p>
+          <button id="adviceBtn" onclick="getAdvice()">Get Advice</button>
+        </div>
+      </div>
     </div>
     <footer>
       <p id="copyYear">

@@ -53,14 +53,22 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
-#activityList {
-  display: none;
+input[type="submit"]:hover {
+  filter: brightness(90%);
 }
+
+/* #activityList {
+  display: none;
+} */
 
 #getMoreBtn {
   background-color: #bbf3f5;
   border: none;
   border-radius: 5px;
+}
+
+#getMoreBtn:hover {
+  filter: brightness(90%);
 }
 
 #longIntro {
@@ -73,13 +81,71 @@ input[type="submit"] {
   background-color: lightgray;
 }
 
+#readLessBtn:hover {
+  filter: brightness(90%);
+}
+
 #readMoreBtn {
   border: none;
   background-color: lightgray;
+}
+
+#readMoreBtn:hover {
+  filter: brightness(90%);
 }
 
 #validationMsg {
   display: none;
   text-align: center;
   font-weight: bold;
+}
+
+.funIMG {
+  border-radius: 100%;
+}
+
+.container {
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#adviceBtn {
+  background-color: #bbf3f5;
+  border: none;
+  border-radius: 5px;
+}
+
+#adviceBtn:hover {
+  filter: brightness(90%);
+}
+
+.mainLayout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.item {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.funIMG {
+  width: 90%;
+  height: 90%;
+}
+
+#itemList {
+  flex-direction: column;
+}
+
+#map {
+  flex-direction: column;
+}
+
+#contactForm {
+  flex-direction: column;
 }
